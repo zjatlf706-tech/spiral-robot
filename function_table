@@ -1,0 +1,21 @@
+| 명령 | 역할 |
+|---|---|
+| `COMM_FW_VERSION` | 모터 드라이버의 펌웨어 버전 확인 |
+| `COMM_JUMP_TO_BOOTLOADER` | 부트로더 모드로 진입 |
+| `COMM_ERASE_NEW_APP` | 새 펌웨어를 쓰기 전에 기존 앱 영역 삭제 |
+| `COMM_WRITE_NEW_APP_DATA` | 새 펌웨어 데이터를 기록 |
+| `COMM_GET_VALUES` | 모터의 현재 동작 상태값 읽기 |
+| `COMM_SET_DUTY` | Duty cycle 방식으로 모터 구동 |
+| `COMM_SET_CURRENT` | 전류 제어 방식으로 모터 구동 |
+| `COMM_SET_CURRENT_BRAKE` | 전류를 이용한 브레이크 제어 |
+| `COMM_SET_RPM` | 속도 제어, 목표 ERPM 지정 |
+| `COMM_SET_POS` | 위치 제어, 목표 각도 지정 |
+| `COMM_SET_HANDBRAKE` | 핸드브레이크 방식으로 모터를 잡아두는 제어 |
+| `COMM_SET_DETECT` | 현재 모터 위치 피드백 요청 |
+| `COMM_ROTOR_POSITION` | 모터가 현재 위치를 응답할 때 사용하는 명령 ID |
+| `COMM_GET_VALUES_SETUP` | 원하는 모터 파라미터를 선택해서 읽는 명령 |
+| `COMM_SET_POS_SPD` | 목표 위치 + 속도 제한 + 가속도를 함께 지정 |
+| `COMM_SET_POS_MULTI` | 멀티턴 위치 제어, 여러 바퀴 회전 가능 |
+| `COMM_SET_POS_SINGLE` | 싱글턴 위치 제어, 한 바퀴 범위 기준 |
+| `COMM_SET_POS_UNLIMITED` | 무제한 회전 위치 제어용 항목, 매뉴얼상 예약/제한된 기능일 수 있음 |
+| `COMM_SET_POS_ORIGIN` | 현재 위치 또는 지정 위치를 원점으로 설정하는 명령 |
